@@ -1,2 +1,2 @@
 # base-project
-base project that includes Stylus, HBS, and Gulp
+base project that includes Stylus, Handlebars, and Gulp
