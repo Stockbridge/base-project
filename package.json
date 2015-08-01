@@ -2,7 +2,7 @@
   "name": "base-project",
   "version": "0.0.0",
   "description": "Base Project built with Gulp, Stylus and Handlebars",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": ""
   },
@@ -11,7 +11,7 @@
     "url": "git://github.com/Stockbridge/base-project.git"
   },
   "author": "Chris Stockbridge",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Stockbridge/base-project/issues"
   },

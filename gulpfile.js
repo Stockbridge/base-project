@@ -28,7 +28,7 @@ gulp.task('clean', function(cb) {
 });
 
 // compile minified scripts
-gulp.task('build', ['templates', 'stylus'], function() {
+gulp.task('scripts-build', ['templates'], function() {
   return gulp.src('src/js/**/*.js')
     .pipe(uglify())
     .pipe(concat('main.js'))
@@ -43,9 +43,16 @@ gulp.task('scripts', ['templates'], function() {
 });
 
 // compile stylus
-gulp.task('stylus', function () {
+gulp.task('stylus-build', function () {
   gulp.src('src/styl/main.styl')
     .pipe(stylus({ use: nib(), compress: true }))
+    .pipe(gulp.dest('dist/css'));
+});
+
+// compile stylus
+gulp.task('stylus', function () {
+  gulp.src('src/styl/main.styl')
+    .pipe(stylus({ use: nib(), compress: false, linenos: true }))
     .pipe(gulp.dest('dist/css'));
 });
  
@@ -57,4 +64,6 @@ gulp.task('watch', function() {
 
  
 // default task
+gulp.task('build', ['clean', 'scripts-build', 'stylus-build']);
 gulp.task('default', ['clean', 'scripts', 'stylus', 'watch']);
+
