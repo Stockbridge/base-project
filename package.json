@@ -4,7 +4,9 @@
   "description": "Base Project Next.js, Typsecript, styled-components",
   "main": "index.html",
   "scripts": {
-    "test": ""
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,12 @@
     "url": "https://github.com/Stockbridge/base-project/issues"
   },
   "homepage": "https://github.com/Stockbridge/base-project",
-  "devDependencies": {
+  "dependencies": {
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
