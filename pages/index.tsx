@@ -8,7 +8,9 @@ export default function Home() {
       <Head>
         <title>Stockbridge - Base Project</title>
       </Head>
-      <Main />
+      <Main>
+        <h1>This is a starter project</h1>
+      </Main>
     </>
   );
 }

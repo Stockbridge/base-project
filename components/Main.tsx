@@ -1,9 +1,9 @@
 import React from "react";
 
-export const Main = () => {
-  return (
-    <main>
-      <h1>This is a starter project</h1>
-    </main>
-  );
+export interface MainProps {
+  children: React.ReactNode;
+}
+
+export const Main = ({ children }: MainProps): JSX.Element => {
+  return <main>{children}</main>;
 };
