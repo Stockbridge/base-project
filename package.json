@@ -2,11 +2,12 @@
   "name": "base-project",
   "version": "0.0.0",
   "description": "Base Project Next.js, Typsecript, styled-components",
-  "main": "index.html",
+  "main": "dist/index.html",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,8 @@
   "devDependencies": {
     "@types/node": "20.6.1",
     "@types/react": "18.2.21",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
     "typescript": "5.2.2"
   }
 }
